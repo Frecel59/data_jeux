@@ -1,5 +1,14 @@
 # Data manipulation
 pandas
 
+# Authentication and environment variables
+requests
+python-dotenv
+
+# Google Cloud Platform
+google-cloud-storage
+gcsfs
+google-auth
+
 # API
 streamlit
