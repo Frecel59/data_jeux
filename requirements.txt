@@ -1,5 +1,6 @@
 # Data manipulation
 pandas
+xlrd
 
 # Authentication and environment variables
 requests

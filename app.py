@@ -5,7 +5,7 @@ import os
 
 # Utilisation de toute la largeur de l'écran
 st.set_page_config(
-    page_title="Pasino / MAS & JT",
+    page_title="Pasino / MAS, JT & PP",
     page_icon="img/logo_pasino.png",
     layout="wide"
 )
@@ -27,7 +27,7 @@ def display_app_content():
     selected_page = st.session_state.get("selected_page", "Informations")
 
     # Afficher le menu
-    st.sidebar.title("Restauration")
+    st.sidebar.title("MAS, JT & PP")
     selected_page = st.sidebar.radio(
         "Sélectionnez une page",
         list(pages.keys()),

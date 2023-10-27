@@ -5,6 +5,7 @@ import streamlit as st
 from gcp import get_storage_client
 from google.cloud.exceptions import NotFound
 from google.cloud import storage
+from Data_cleaning.clean_adh import clean_adh_data
 
 
 import footer
@@ -34,6 +35,8 @@ def main():
         """,
         unsafe_allow_html=True
     )
+
+    st.markdown(len(clean_adh_data()))
     #########################################################################
     ############################## EN COURS #################################
     #########################################################################
