@@ -6,6 +6,8 @@ from gcp import get_storage_client
 from google.cloud.exceptions import NotFound
 from google.cloud import storage
 from Data_cleaning.clean_adh import clean_adh_data
+from Data_cleaning.clean_euros_players import clean_euros_players
+from Data_cleaning.clean_evo_jj import clean_evo_jj
 
 
 import footer
@@ -36,7 +38,10 @@ def main():
         unsafe_allow_html=True
     )
 
-    st.markdown(len(clean_adh_data()))
+    st.markdown(f'<p class="period-text">Test avec le fichier ADH : {len(clean_adh_data())} lignes</p>' , unsafe_allow_html=True)
+    st.markdown(f'<p class="period-text">Test avec le fichier EUROS_PLAYERS : {len(clean_euros_players())} lignes</p>' , unsafe_allow_html=True)
+    st.markdown(f'<p class="period-text">Test avec le fichier EVO_JJ : {len(clean_evo_jj())} lignes</p>' , unsafe_allow_html=True)
+
     #########################################################################
     ############################## EN COURS #################################
     #########################################################################
