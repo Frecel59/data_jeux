@@ -1,7 +1,4 @@
 import pandas as pd
-# from google.cloud import storage
-# from google.oauth2 import service_account
-# import os
 from dotenv import load_dotenv
 from gcp import get_storage_client
 
@@ -9,9 +6,6 @@ from gcp import get_storage_client
 load_dotenv() # Charger les variables d'environnement à partir du fichier .env
 
 def concatenate_adh_data():
-    # # Récupérer le nom du bucket
-    # bucket_name = os.getenv('BUCKET_NAME')
-
     # Chemin vers le dossier contenant les fichiers XLSX dans le bucket
     blob_directory = "ADH/"
 
