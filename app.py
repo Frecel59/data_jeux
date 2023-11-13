@@ -15,6 +15,7 @@ st.set_page_config(
 pages = {
     "Informations": "📋",
     "Exports": "📤",
+    "Analyses N-1": "📅",
 
 }
 
@@ -44,6 +45,10 @@ def display_app_content():
     elif selected_page == "Exports":
         import exports
         exports.main()
+    elif selected_page == "Analyses N-1":
+        import analyses_n1
+        analyses_n1.main()
+
 
 
 

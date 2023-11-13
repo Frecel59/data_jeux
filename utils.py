@@ -6,6 +6,7 @@ def display_icon(page_name, custom_title=None):
     icons = {
         "Informations": "📋",
         "Exports": "📤",
+        "Analyses N-1": "📅",
     }
     if page_name in icons:
         display_title = custom_title if custom_title else page_name
