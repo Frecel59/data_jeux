@@ -38,9 +38,10 @@ def main():
         unsafe_allow_html=True
     )
 
+    st.markdown(f'<p class="period-text">Test avec le fichier EVO_JJ : {len(clean_evo_jj())} lignes</p>' , unsafe_allow_html=True)
     st.markdown(f'<p class="period-text">Test avec le fichier ADH : {len(clean_adh_data())} lignes</p>' , unsafe_allow_html=True)
     st.markdown(f'<p class="period-text">Test avec le fichier EUROS_PLAYERS : {len(clean_euros_players())} lignes</p>' , unsafe_allow_html=True)
-    st.markdown(f'<p class="period-text">Test avec le fichier EVO_JJ : {len(clean_evo_jj())} lignes</p>' , unsafe_allow_html=True)
+
 
     #########################################################################
     ############################## EN COURS #################################
